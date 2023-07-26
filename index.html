@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이폰응용</title>
+    <script src="https://kit.fontawesome.com/dc229ec10e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="jquery-ui-1.10.3.custom.min.js"></script>
+    <script>
+        $(function(){
+
+            $(".colorbox>img").filter(":nth-child(1)").on('click',function(){
+                $(".box:nth-child(1)").find("img,a").stop(true).animate({opacity:'1'},300,'linear')
+                $(".box:nth-child(2)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $(".box:nth-child(3)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $(".box:nth-child(4)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $("#imgbox>img").stop(true).animate({opacity:'0'},300,'linear')
+            });
+            $(".colorbox>img").filter(":nth-child(2)").on('click',function(){
+                $(".box:nth-child(1)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $(".box:nth-child(2)").find("img,a").stop(true).animate({opacity:'1'},300,'linear')
+                $(".box:nth-child(3)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $(".box:nth-child(4)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $("#imgbox>img").stop(true).animate({opacity:'0'},300,'linear')
+            });
+            $(".colorbox>img").filter(":nth-child(3)").on('click',function(){
+                $(".box:nth-child(1)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $(".box:nth-child(2)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $(".box:nth-child(3)").find("img,a").stop(true).animate({opacity:'1'},300,'linear')
+                $(".box:nth-child(4)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $("#imgbox>img").stop(true).animate({opacity:'0'},300,'linear')
+            });
+            $(".colorbox>img").filter(":nth-child(4)").on('click',function(){
+                $(".box:nth-child(1)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $(".box:nth-child(2)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $(".box:nth-child(3)").find("img,a").stop(true).animate({opacity:'0'},300,'linear')
+                $(".box:nth-child(4)").find("img,a").stop(true).animate({opacity:'1'},300,'linear')
+                $("#imgbox>img").stop(true).animate({opacity:'0'},300,'linear')
+            });
+
+
+
+        ///////////
+        });
+    </script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-apple" style="color: #ffffff;"></i></a></li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </header>
+
+    <nav>
+        <div id="top">
+            <h1>iPhone 13 Pro</h1>
+            <h3>￦1,390,000부터</h3>
+        </div>
+        <div id="noti">
+            iPhone을 무료로 배송받으세요.
+        </div>
+    </nav>
+
+    <!--//header-->
+
+
+    <!--section-->
+    <section>
+        <!--left-->
+        <div id="imgbox">
+            <div class="box">
+                <img src="p1.jpg" alt="/">
+                <a href="#"><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <div class="box">
+                <img src="p2.jpg" alt="/">
+                <a href="#"><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <div class="box">
+                <img src="p3.jpg" alt="/">
+                <a href="#"><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <div class="box">
+                <img src="p4.jpg" alt="/">
+                <a href="#"><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <img src="p_b.png" alt="/"> <!--투명색-->
+        </div>
+
+        <!--//left-->
+
+        <!--right-->
+        <div id="color">
+            <h2>iPhone 13 Pro구입하기</h2>
+            <p>마음에 드는 컬러를 고르세요.</p>
+            <div class="colorbox">
+                <img src="c1.jpg" alt="/">
+                <img src="c2.jpg" alt="/">
+                <img src="c3.jpg" alt="/">
+                <img src="c4.jpg" alt="/">
+            </div>
+        </div>
+    </section>
+    <!--//section-->
+</body>
+</html>
